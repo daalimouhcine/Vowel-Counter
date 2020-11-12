@@ -73,8 +73,9 @@ form #submit:hover {
 }
 .container div {
     background:whitesmoke;
-    height:8rem;
-    width:50rem;
+    min-height:8rem;
+    max-width:50rem;
+    min-width: 20rem;
     border:1px solid gray;
     border-radius:5px;
 }
@@ -95,3 +96,74 @@ form #submit:hover {
     color:rgb(95, 95, 95);
 }
 
+
+@media (max-width:600px) {
+    header {
+        min-height: 28vh;
+    }
+    header h1 {
+        font-size:3.7rem;
+    }
+}
+@media (max-width:470px) {
+    header {
+        min-height: 22vh;
+    }
+    header h1 {
+        font-size:3rem;
+    }
+}
+@media (max-width:370px) {
+    header {
+        min-height: 19vh;
+    }
+    header h1 {
+        font-size:2.5rem;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    form #text {
+        width: 2.5rem;
+        height:2.2rem;
+    }
+
+    form #submit {
+        width:3.5rem;
+        height:2rem;
+        font-size:1rem;
+    }
+    .container div {
+        min-height: 7rem;
+        min-width: 10rem;
+    }
+    .container div p {
+        font-size:1.7rem;
+        padding:0 1rem;
+    }
+}
+@media (max-width:315px) {
+    header {
+        min-height: 15vh;
+    }
+    header h1 {
+        font-size:2rem;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    form #text {
+        width: 2.5rem;
+        height:2.2rem;
+    }
+
+    form #submit {
+        width:3.5rem;
+        height:1.8rem;
+        font-size:0.9rem;
+    }
+}
