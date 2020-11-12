@@ -48,7 +48,13 @@ function calculVowels (e) {
         div.appendChild(p);
 
         input.value = "";
-
+        
+        div.addEventListener("mouseenter", function(){
+            btn.childNodes[0].style.color = "black";
+        });
+        div.addEventListener("mouseleave",function(){
+            btn.childNodes[0].style.color = "gray";
+        });
         btn.addEventListener("click",deleteMessage);
     }
 }

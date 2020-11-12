@@ -78,22 +78,20 @@ form #submit:hover {
     border:1px solid gray;
     border-radius:5px;
 }
-.container p {
+.container div p {
     font-size:2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align:center;
 }
-.container button {
+.container div button {
     background:transparent;
     border:none;
     outline:none;
 }
-.container button i {
+.container div button i {
     font-size:1.5rem;
-    color:gray;
     margin:0.5rem;
     cursor:pointer; 
+    color:rgb(95, 95, 95);
 }
-.container div:hover > .container button i {
-    color:black;
-}
+
